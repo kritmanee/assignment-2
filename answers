@@ -1,0 +1,46 @@
+#question 1
+var_1 = 100
+var_2 = 29
+result = ((var_1 + var_2)*3)**2
+print("The result of the calculation was: ", result)
+
+#question 2
+name = input("Name:")
+year = input("Year of birth:")
+age = input("Age:")
+password = year[2:4]+name[0:3]+age
+print("Password:", password)
+
+#question 3
+num_1 = int(input("Enter a Number:"))
+num_2 = int(input("Enter a Number:"))
+if (num_1 % 2) == 0 and (num_2 % 2) == 0:
+    print("Both numbers are even")
+if (num_1 % 2) != 0 or (num_2 % 2) != 0:
+    print("One of the numbers is even")
+else:
+    print("Both numbers are odd")
+    
+#question 4
+integer = int(input("Give an integer:"))
+x = range(integer)
+total = sum(range(integer))
+print("The sum was:", total)
+
+#question 5
+import random
+import math
+x = random.randint(0, 10)
+
+count = 0
+while count < math.log(10 - 0 + 1, 2):
+    count += 1
+    guess = int(input("Player: "))
+    
+    if x == guess:
+        print("That's right!", "Number of Tries: ", count)
+        break
+    elif x > guess:
+        print("Try a greater number.")
+    elif x < guess:
+        print("Try a smaller number.")
