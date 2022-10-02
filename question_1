@@ -1,0 +1,4 @@
+var_1 = 100
+var_2 = 29
+result = ((var_1 + var_2)*3)**2
+print("The result of the calculation was: ", result)
